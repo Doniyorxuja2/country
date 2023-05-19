@@ -33,7 +33,7 @@ const InputList = ({ setCountrys, getData }) => {
       <div className="py-[18px] flex items-center gap-[30px] bg-white px-[34px] dark:bg-[#2B3844] w-[280px] shadow-[0px_2px_9px_rgba(0,0,0,0.0532439)] rounded-[5px] md:w-[480px]">
         <FaSearch className="dark:text-white"></FaSearch>
         <input
-          onKeyDown={handleSubmit}
+          onChange={handleSubmit}
           className="outline-none dark:text-white w-full bg-inherit font-normal text-[14px] leading-[20px] text-[#848484]"
           type="text"
           placeholder="Search for a country…"
