@@ -18,7 +18,7 @@ const Country = () => {
     }
   };
 
-  // console.log(davlat);
+  console.log(davlat);
 
   return (
     <div className="py-[48px] bg-[#f2f2f2] dark:bg-[#202C36]">
@@ -97,13 +97,15 @@ const Country = () => {
               {davlat[0].borders && (
                 <div className="flex gap-5 items-center mt-[68px] text-[#111517] dark:text-white">
                   Border Countries:
-                  {davlat[0].borders.map((d, index) => (
-                    <div key={index}>
-                      <span className=" cursor-pointer py-[5px] px-[20px] bg-white shadow-[0px_0px_4px_1px_rgba(0,0,0,0.104931)] rounded dark:bg-[#2B3844]">
-                        {d}
-                      </span>
-                    </div>
-                  ))}
+                  <div className="flex-wrap flex gap-4">
+                    {davlat[0].borders.map((d, index) => (
+                      <div key={index}>
+                        <span className=" cursor-pointer py-[5px] px-[20px] bg-white shadow-[0px_0px_4px_1px_rgba(0,0,0,0.104931)] rounded dark:bg-[#2B3844]">
+                          {d}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
