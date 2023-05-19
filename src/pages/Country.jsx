@@ -18,7 +18,7 @@ const Country = () => {
     }
   };
 
-  console.log(davlat);
+  // console.log(davlat);
 
   return (
     <div className="py-[48px] bg-[#f2f2f2] dark:bg-[#202C36]">

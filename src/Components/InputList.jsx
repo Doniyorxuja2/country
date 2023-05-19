@@ -5,11 +5,11 @@ import RegionFiltr from "./RegionFiltr";
 
 const InputList = ({ setCountrys, getData }) => {
   const handleSubmit = (e) => {
-    if (e.key === "Enter") {
-      getName(e.target.value);
-    } else {
-      getData();
-    }
+    // if (e.key === "Enter") {
+    getName(e.target.value);
+    // } else {
+    //   getData();
+    // }
   };
   useEffect(() => {
     getName();
